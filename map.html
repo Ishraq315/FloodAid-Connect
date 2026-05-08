@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Status Map - FloodAid Connect</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">FloodAid Connect</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="report.html">Report</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="section-title">Area Status Map</h2>
+        <p style="margin-bottom: 2rem; color: #555;">Click on a district below to see the relief updates for that specific area. The color represents the latest reported status.</p>
+        
+        <!-- Grid of districts loaded by main.js -->
+        <div id="map-grid" class="map-grid">
+            <!-- District boxes go here -->
+        </div>
+
+        <!-- Hidden section that appears when a district is clicked -->
+        <div id="district-reports">
+            <h2 class="section-title" id="district-title">Reports</h2>
+            <div id="district-feed" class="feed-grid">
+                <!-- Filtered reports go here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 FloodAid Connect</p>
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Report - FloodAid Connect</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">FloodAid Connect</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="report.html">Report</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="form-container">
+            <h2 class="section-title">Post a Relief Update</h2>
+            
+            <div id="success-message" class="success-message">
+                Report submitted successfully!
+            </div>
+
+            <!-- Report Form -->
+            <form id="report-form">
+                <div class="form-group">
+                    <label for="teamName">Team Name</label>
+                    <input type="text" id="teamName" required placeholder="Enter your team name">
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location / District</label>
+                    <input type="text" id="location" required placeholder="e.g., Sylhet, Fenchuganj">
+                </div>
+
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <select id="status" required>
+                        <option value="" disabled selected>Select status</option>
+                        <option value="Area Covered">Area Covered</option>
+                        <option value="Partially Covered">Partially Covered</option>
+                        <option value="Need More Help">Need More Help</option>
+                        <option value="Urgent - Need Teams Now">Urgent - Need Teams Now</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" required placeholder="Describe what you distributed or what is needed..."></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Submit Report</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 FloodAid Connect</p>
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
